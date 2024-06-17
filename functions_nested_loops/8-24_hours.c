@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
+ * jack_bauer - Function to print 24 hours of the day
  * Return: Always 0 (Success)
  */
 
@@ -14,7 +14,7 @@ void jack_bauer(void)
 
 	for (a = 0; a <= 2; a++)
 	{
-		for (b = 0; b < 10 && (a == 2 ? b < 4 : 1); b++) 
+		for (b = 0; b < 10 && (a == 2 ? b < 4 : 1); b++)
 		{
 			for (c = 0; c <= 5; c++)
 			{
@@ -30,5 +30,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-
 }
