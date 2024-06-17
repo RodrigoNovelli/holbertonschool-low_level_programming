@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 /**
  * print_alphabet - Entry point
  * Return: Always 0 (Success)
