@@ -1,6 +1,5 @@
 #include "main.h"
 #include "_putchar.c"
-#include "1-alphabet.c"
 
 /**
  * print_alphabet_x10 - print 10 alphabets.
@@ -18,8 +17,8 @@ void print_alphabet_x10(void)
 
 		for (l = 'a' ; l <= 'z' ; l++)
 		{
-			putchar(l);
+			_putchar(l);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
