@@ -5,7 +5,7 @@
  * Descritption: this is a function knows if your number is
  * positive, negative or 0.
  * @n: This will be the number that you enter
- * Return: 0 ; 1 ; -1.
+ * Return: 0.
  */
 
 int print_sign(int n)
