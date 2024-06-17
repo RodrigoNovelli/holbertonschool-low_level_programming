@@ -2,6 +2,8 @@
 
 /**
  * _islower - checks if the letter is lower case.
+ * 
+ * Descritption: this is a function that knows if your letter is lower or upper case.
  *
  * Return: Always 0.
  */
