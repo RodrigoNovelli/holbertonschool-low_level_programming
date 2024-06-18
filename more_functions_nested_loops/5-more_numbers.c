@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * more_numbers - check the code
@@ -24,6 +25,6 @@ void more_numbers(void)
 				_putchar(m + '0');
 			}
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
