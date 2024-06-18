@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * print_square - makes a square
+ *@size: is the size of the squRE
  * Return: Always 0.
  */
 
