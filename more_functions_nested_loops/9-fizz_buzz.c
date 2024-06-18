@@ -23,6 +23,11 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
+		else if (n == 100)
+		{
+			printf("%d", n);
+			putchar('\n');
+		}
 		else
 		{
 			printf("%d ", n);
