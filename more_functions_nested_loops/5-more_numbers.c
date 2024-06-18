@@ -18,13 +18,9 @@ void more_numbers(void)
 			if (m >= 10)
 			{
 				_putchar((m / 10) + '0');
-				_putchar((m % 10) + '0');
 			}
-			else
-			{
-				_putchar(m + '0');
-			}
+			_putchar((m % 10) + '0');
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
