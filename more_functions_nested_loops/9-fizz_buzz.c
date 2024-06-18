@@ -25,7 +25,8 @@ int main(void)
 			{
 				printf("Buzz\n");
 			}
-			printf("Buzz ");
+			else
+				printf("Buzz ");
 		}
 		else
 		{
