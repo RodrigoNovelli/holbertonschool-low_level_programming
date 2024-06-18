@@ -21,12 +21,11 @@ int main(void)
 		}
 		else if ((n % 5) == 0)
 		{
+			if (n == 100)
+			{
+				printf("Buzz\n");
+			}
 			printf("Buzz ");
-		}
-		else if (n == 100)
-		{
-			printf("%d", n);
-			putchar('\n');
 		}
 		else
 		{
