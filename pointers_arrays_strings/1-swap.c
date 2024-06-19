@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
+ * swapSwaps the value of two varr
  * @a: the first value you wanna swap
  * @b: the second value you wanna swap
  * Return: void
