@@ -27,11 +27,11 @@ int _strlen(char *s)
 void puts_half(char *str)
 {
 	int largo = _strlen(str);
-	int half = largo / 2;
+	int half = (largo - 1) / 2;
 	int l;
 
 
-	for (l = half; l < largo; l++)
+	for (l = (half + 1); l < (largo); l++)
 	{
 		_putchar(str[l]);
 	}
