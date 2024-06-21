@@ -1,12 +1,16 @@
 #include "main.h"
-#include <stdio.h>
+/**
+ * _atoi - Find int data in strings
+ *@s: the string you wanna convert into int
+ * Return: num
+ */
 int _atoi(char *s)
 {
 	int adr;
 	int j;
 	int num;
 	int sign;
-	
+
 	adr = 0;
 	sign = 1;
 	while (s[adr] != '\0')
@@ -24,27 +28,19 @@ int _atoi(char *s)
 					break;
 			}
 			if (s[adr] <= '0' || s[adr] >= '9')
-                                        break;
+				break;
 		}
 		else
-		{
 			adr++;
-		}
 	}
 	for (adr = 0; adr <= j; adr++)
 	{
 		if (s[adr] == '-')
-		{
 			sign = sign * -1;
-		}
 		else if (s[adr] == '+')
-		{
- 			sign = sign * 1;
-		}
+			sign = sign * 1;
 		else
-		{
 			continue;
-		}
 	}
 	num = num * sign;
 	return (num);
