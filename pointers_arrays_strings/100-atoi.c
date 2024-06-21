@@ -6,13 +6,11 @@
  */
 int _atoi(char *s)
 {
-	int adr;
+	int adr = 0;
 	int j;
-	int num;
-	int sign;
+	int num = 0;
+	int sign = 1;
 
-	adr = 0;
-	sign = 1;
 	while (s[adr] != '\0')
 	{
 		if (s[adr] >= '0' && s[adr] <= '9')
