@@ -1,12 +1,14 @@
 #include "main.h"
-
+#include <stdio.h>
 int _atoi(char *s)
 {
 	int adr;
 	int j;
 	int num;
+	int sign;
 	
 	adr = 0;
+	sign = 1;
 	while (s[adr] != '\0')
 	{
 		if (s[adr] >= '0' && s[adr] <= '9')
@@ -14,17 +16,36 @@ int _atoi(char *s)
 			j = adr;
 			num = s[adr] - 48;
 			adr++;
-			while (s[(adr)] >= '0' && s[adr] <= '9')
+			while (s[adr] >= '0' && s[adr] <= '9')
 			{
 				num = (num * 10) + (s[adr] - 48);
 				adr++;
+				if (s[adr] <= '0' || s[adr] >= '9')
+					break;
 			}
+			if (s[adr] <= '0' || s[adr] >= '9')
+                                        break;
 		}
-		else 
+		else
 		{
 			adr++;
 		}
 	}
+	for (adr = 0; adr <= j; adr++)
+	{
+		if (s[adr] == '-')
+		{
+			sign = sign * -1;
+		}
+		else if (s[adr] == '+')
+		{
+ 			sign = sign * 1;
+		}
+		else
+		{
+			continue;
+		}
+	}
+	num = num * sign;
 	return (num);
-	return (j);
 }
