@@ -12,20 +12,41 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int counter1;
 	int counter0;
+	int counter2;
+	int cpy;
 
 	counter0 = 0;
 	while (dest[counter0] != 0)
 	{
 		counter0++;
 	}
-	for (counter1 = 0; counter1 < n; counter1++)
+	while (src[counter2] != 0)
 	{
-		if (src[counter1] == '\0')
+		counter2++;
+	}
+	if (n > counter2)
+	{
+		for (cpy = 0; cpy <= counter2; cpy++)
 		{
-			break;
+			dest[cpy] = src[cpy];
 		}
-		else
-		dest[counter1] = src[counter1];
+		for (cpy = counter2 + 1; cpy <= n; cpy++)
+		{
+			dest[cpy] = '\0';
+		}
+
+	}
+	else
+	{
+		for (counter1 = 0; counter1 < n; counter1++)
+		{
+			if (src[counter1] == '\0')
+			{
+				break;
+			}
+			else
+				dest[counter1] = src[counter1];
+		}
 	}
 	return (dest);
 }
