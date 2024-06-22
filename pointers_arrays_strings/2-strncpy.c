@@ -12,6 +12,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int counter1;
 	int counter0;
+
 	counter0 = 0;
 	while (dest[counter0] != 0)
 	{
