@@ -19,6 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		counter0++;
 	}
+	counter2= 0;
 	while (src[counter2] != 0)
 	{
 		counter2++;
