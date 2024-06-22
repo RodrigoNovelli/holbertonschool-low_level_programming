@@ -24,7 +24,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		counter2++;
 	}
-	if (counter2 == 2)
+	if (counter2 < 2)
 	{
 		for (counter1 = 0; counter1 < n; counter1++)
 		{
