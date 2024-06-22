@@ -20,6 +20,11 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	for (counter1 = 0; counter1 < n; counter1++)
 	{
+		if (src[counter1] == '\0')
+		{
+			break;
+		}
+		else
 		dest[counter1] = src[counter1];
 	}
 	return (dest);
