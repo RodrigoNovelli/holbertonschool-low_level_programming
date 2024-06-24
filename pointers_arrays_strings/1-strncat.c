@@ -23,7 +23,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		if (rec == n - 1)
 		{
-			src[rec] = '\n'
 		}
 		else
 		{
