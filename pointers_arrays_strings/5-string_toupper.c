@@ -10,6 +10,8 @@ char *string_toupper(char *a)
 {
 	int counter = 0;
 	int x = 0;
+
+	while (a[counter] != 0)
 		counter++;
 	for (x = 0; x <= counter; x++)
 	{
