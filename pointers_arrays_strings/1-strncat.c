@@ -21,8 +21,15 @@ char *_strncat(char *dest, char *src, int n)
 	p = &dest[counter];
 	for (rec = 0; rec <= n - 1; rec++)
 	{
-		*p = src[rec];
-		p++;
+		if (rec == n - 1)
+		{
+			src[rec] = '\n'
+		}
+		else
+		{
+			*p = src[rec];
+			p++;
+		}
 	}
 	return (dest);
 }
