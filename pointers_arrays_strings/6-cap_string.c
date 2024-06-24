@@ -16,7 +16,7 @@ char *cap_string(char *a)
 		counter++;
 	for (x = 0; x < counter; x++)
 	{
-		if (x == 0)
+		if (x == 0 && a[x] >= 97 && a[x] <= 122)
 		{
 			a[x] = a[x] - 32;
 		}
