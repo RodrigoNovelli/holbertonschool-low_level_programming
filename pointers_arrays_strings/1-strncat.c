@@ -19,9 +19,9 @@ char *_strncat(char *dest, char *src, int n)
 		counter++;
 	}
 	p = &dest[counter];
-	for (rec = 0; rec <= n ; rec++)
+	for (rec = 0; rec <= n -1 ; rec++)
 	{
-		if (rec == n)
+		if (rec == n - 1) 
 		{
 			src[rec] = '\n';
 		} 
