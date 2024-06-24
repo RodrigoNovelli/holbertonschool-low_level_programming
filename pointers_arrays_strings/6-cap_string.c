@@ -3,7 +3,7 @@
 /**
  * cap_string - this function converts the first letter of every
  * word in capital letter
- * @a: the string you wanna 
+ * @a: the string you wanna
  * Return: Always 0.
  */
 
