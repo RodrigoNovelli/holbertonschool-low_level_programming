@@ -23,10 +23,7 @@ char *leet(char *a)
 			{
 				a[counter] = n[y];
 			}
-			else
-			{
-				y++;
-			}
+			y++;
 		}
 		counter++;
 	}
