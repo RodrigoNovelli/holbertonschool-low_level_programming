@@ -15,7 +15,7 @@ int _strcmp(char *s1, char *s2)
 		counter1++;
 	while (s2[counter2] != 0)
 		counter2++;
-        if (counter1 < counter2)
+	if (counter1 < counter2)
 		return (13);
 	else if (counter1 > counter2)
 		return (-13);
