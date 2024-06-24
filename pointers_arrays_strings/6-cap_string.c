@@ -16,7 +16,11 @@ char *cap_string(char *a)
 		counter++;
 	for (x = 0; x < counter; x++)
 	{
-		if (a[x] == '\t' || a[x] == '\n' || a[x] == 22 || a[x] == 32
+		if (x = 0)
+		{
+			a[x] = a[x] - 32;
+		}
+		else if (a[x] == '\t' || a[x] == '\n' || a[x] == 22 || a[x] == 32
 				|| a[x] == 28 || a[x] == 29 || a[x] == 44
 				|| a[x] == 46 || a[x] == 59 || a[x] == 21
 				|| a[x] == 63 || a[x] == 123 || a[x] == 125)
