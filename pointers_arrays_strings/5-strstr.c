@@ -16,6 +16,7 @@ char *_strstr(char *haystack, char *needle)
 	char *p;
 
 	count = 0;
+	counter = 0;
 	while (needle[counter] != 0)
 		counter++;
 	while (haystack[count] != 0)
@@ -29,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 				while (haystack[count] == needle[count2])
 				{
 					if (count2 == counter - 1)
-						return (p + 2);
+						return (p);
 					else
 					{
 						count++;
