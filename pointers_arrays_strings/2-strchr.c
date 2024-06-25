@@ -18,9 +18,12 @@ char *_strchr(char *s, char c)
 		{
 			x = &s[counter];
 			return (x);
-			break;
 		}
-
+		else if (c == '\0')
+		{
+			x == &[counter];
+			return (x);
+		}
 		counter++;
 	}
 	return (0);
