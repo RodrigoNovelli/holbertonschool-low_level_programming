@@ -38,8 +38,8 @@ char *_strstr(char *haystack, char *needle)
 					{
 						count++;
 						count2++;
-						if (count2 == counter - 1 && haystack[count] == needle[count2])
-							return (p);
+					if (count2 == counter - 1 && haystack[count] == needle[count2])
+						return (p);
 					}
 				}
 				else
