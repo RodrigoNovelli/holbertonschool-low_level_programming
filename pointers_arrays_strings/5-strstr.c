@@ -12,27 +12,34 @@ char *_strstr(char *haystack, char *needle)
 {
 	int count;
 	int count2;
+	int counter;
 	char *p;
 
 	count = 0;
-	while (needle[count] != 0)
+	while (needle[counter] != 0)
+		counter++;
+	while (haystack[count] != 0)
 	{
 		count2 = 0;
-		while (haystack[count2] != 0)
+		while (needle[count2] != 0)
 		{
-			if (needle[count] == haystack[count2])
+			if (haystack[count] == needle[count2])
 			{
-				p = &needle[count];
-				return (p);
+				p = &haystack[counter];
+				while (haystack[count] == needle[count2])
+				{
+					if (count2 == counter - 1)
+						return (p + 2);
+					else
+					{
+						count++;
+						count2++;
+					}
+				}
 			}
-			else if (needle[count] == haystack[count2] && needle[count] == '\0')
-			{
-				return ('\0');
-			}
-			else
 			count2++;
 		}
 		count++;
 	}
-	return (0);
+	return ('\0');
 }
