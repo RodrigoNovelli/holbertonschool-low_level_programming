@@ -33,8 +33,7 @@ char *_strstr(char *haystack, char *needle)
 						return (p);
 					else
 					{
-						count++;
-						count2++;
+						continue;
 					}
 				}
 			}
