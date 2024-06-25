@@ -41,7 +41,5 @@ int _atoi(char *s)
 			continue;
 	}
 	num = num * sign;
-	if (num == -2147483647)
-		num = -2147483647 -1;
 	return (num);
 }
