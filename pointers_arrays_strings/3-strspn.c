@@ -27,5 +27,8 @@ unsigned int _strspn(char *s, char *accept)
 		c++;
 		y = 0;
 	}
-	return (5);
+	if (x > 0)
+		return (5);
+	else
+		return (0);
 }
