@@ -18,34 +18,30 @@ int _atoi(char *s)
 			j = adr;
 			num = s[adr] - 48;
 			adr++;
-			for (adr = 0; adr <= j; adr++)
+			while (s[adr] >= '0' && s[adr] <= '9')
 			{
-				if (s[adr] == '-')
-					sign = sign * -1;
-				else if (s[adr] == '+')
-					sign = sign * 1;
-			}
-		}
-                else
-                        continue;                                                                                               			
-		while (s[adr] >= '0' && s[adr] <= '9')
-			{
-				if ((num * sign)  > '0')
-				{
-					num = (num * 10) + (s[adr] - 48);
-					adr++;
-				}
-				else if ((num * sign) < '0')
-				{
-					num = (num * -10) - (s[adr] - 48);
-					adr++;
-				}
-				else if(s[adr] <= '0' || s[adr] >= '9')
+				num = (num * 10) + (s[adr] - 48);
+				adr++;
+				if (s[adr] <= '0' || s[adr] >= '9')
 					break;
 			}
 			if (s[adr] <= '0' || s[adr] >= '9')
 				break;
+		}
+		else
 			adr++;
 	}
+	for (adr = 0; adr <= j; adr++)
+	{
+		if (s[adr] == '-')
+			sign = sign * -1;
+		else if (s[adr] == '+')
+			sign = sign * 1;
+		else
+			continue;
+	}
+	num = num * sign;
+	if (num == -2147483647)
+		num = -2147483647 -1;
 	return (num);
 }
