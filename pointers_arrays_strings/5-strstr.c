@@ -22,22 +22,22 @@ char *_strstr(char *haystack, char *needle)
 	while (haystack[count] != 0)
 	{
 		count2 = 0;
-		while (needle[count2] != 0)
+		while (count2 < counter)
 		{
 			if (haystack[count] == needle[count2])
 			{
 				p = &haystack[count];
-				while (haystack[count] == needle[count2])
+				while (haystack[count] == needle[count2] && count2 < counter)
 				{
-					if (count2 == counter - 1)
+					count++;
+					count2++;
+					if (count2 == counter - 1 && haystack[count] == needle[count2])
 						return (p);
-					else
-					{
-						continue;
-					}
 				}
+
 			}
-			count2++;
+			else
+				break;
 		}
 		count++;
 	}
