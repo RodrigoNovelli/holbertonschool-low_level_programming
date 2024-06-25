@@ -27,8 +27,8 @@ int _atoi(char *s)
 			}
 		}
                 else
-                        continue;                                                                                               }
-			while (s[adr] >= '0' && s[adr] <= '9')
+                        continue;                                                                                               			
+		while (s[adr] >= '0' && s[adr] <= '9')
 			{
 				if ((num * sign)  > '0')
 				{
@@ -40,13 +40,11 @@ int _atoi(char *s)
 					num = (num * -10) - (s[adr] - 48);
 					adr++;
 				}
-				if (s[adr] <= '0' || s[adr] >= '9')
+				else if(s[adr] <= '0' || s[adr] >= '9')
 					break;
 			}
 			if (s[adr] <= '0' || s[adr] >= '9')
 				break;
-		}
-		else
 			adr++;
 	}
 	return (num);
