@@ -23,7 +23,7 @@ void print_diagsums(int *a, int size)
 		sum = sum + a[(size + 1) * counter];
 		sum1 = sum1 + a[(size -1) * counter1];
 		counter++;
-		counter++;
+		counter1++;
 	}
 	printf("%d, %d\n", sum, sum1);
 }
