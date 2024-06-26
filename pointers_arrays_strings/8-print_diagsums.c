@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - check the code
+ * print_diagsums - adds the diagonals values of a 2d array.
  *@a: the string
  *@size: size
- * Return: void
+ * Return: the first one is the diagonal from 0 0, the second
+ * the diagonal form MAX MAX
  */
 
 void print_diagsums(int *a, int size)
@@ -21,7 +22,7 @@ void print_diagsums(int *a, int size)
 	while (counter < size)
 	{
 		sum = sum + a[(size + 1) * counter];
-		sum1 = sum1 + a[(size -1) * counter1];
+		sum1 = sum1 + a[(size - 1) * counter1];
 		counter++;
 		counter1++;
 	}
