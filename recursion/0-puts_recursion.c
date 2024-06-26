@@ -2,7 +2,8 @@
 /**
  * _puts_recursion - Prints all the string
  * @s: the string you wanna print.
- * Return : void */
+ *Return: void
+ */
 void _puts_recursion(char *s)
 {
 	if (*s == 0)
