@@ -11,10 +11,6 @@ int multiplicador(int y, int n)
 	{
 		return (y);
 	}
-	else if ((y * y) > n)
-	{
-		return (-1);
-	}
 	else
 		return (multiplicador(y + 1, n));
 }
