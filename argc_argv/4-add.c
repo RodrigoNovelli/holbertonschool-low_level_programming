@@ -8,42 +8,31 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum;
-	int nuevo;
-	int res;
-	int n;
+	int sum, num, x, n, j;
+	char *p;
 
-	for (n = 1; n <= argc - 1; n++)
+	sum = 0;
+	if (argc == 1)
 	{
-		if (argc == 1)
+		printf("0\n");
+	}
+	for (x = 1; x < argc; x++)
+	{
+		p = argv[x];
+		for (j = 0; p[j] != 0; j++)
 		{
-			printf("0\n");
-			return (0);
-		}
-		else if (atoi(argv[n]) == 0)
-		{
-			printf("Error\n");
-			return (0);
-		}
-		else if(n == 1)
-		{
-			sum = 0;
-			nuevo = atoi(argv[n]);
-			res = sum + nuevo;
-		}
-		else
-		{
-			sum = res;
-			nuevo = atoi(argv[n]);
-			res = sum + nuevo;
-			if (n == argc - 1)
+			if (p[j] < 48 || p[j] > 57)
 			{
-				sum = res;
-				nuevo = atoi(argv[n]);
-				res = sum + nuevo;
-				printf("%d\n", sum);
+				printf("Error\n");
+				return (1);
 			}
 		}
 	}
-	return (res);
+	for (n = 1; n < argc; n++)
+	{
+		num = atoi(argv[n]);
+		sum = sum + num;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
