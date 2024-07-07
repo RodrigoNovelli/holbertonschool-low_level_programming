@@ -30,10 +30,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		p[n] = s1[n];
 	}
-	p2 = p[n + 1];
+	p2 = &p[n + 1];
 	for (y = 0; y < size2; y++)
 	{
-		*p2 = &s2[y];
+		*p2 = s2[y];
 		p2++;
 	}
 	return (p);
