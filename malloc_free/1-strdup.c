@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	if (size > 1)
+	if (size >= 0)
 	{
 		if (size == 0)
 			size = 1;
