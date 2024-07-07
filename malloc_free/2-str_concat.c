@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * str_concat - concatenates two strings in a malloc space of memory
+ *@s1: the first string
+ *@s2: the second string
+ * Return: a pointer, or NULL if something goes wrong
  */
 char *str_concat(char *s1, char *s2)
 {
