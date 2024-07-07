@@ -7,7 +7,7 @@
  * Return: Pointer to the duplicated string or NULL.
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	unsigned int size = 0;
 	unsigned int n;
