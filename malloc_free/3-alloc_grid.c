@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "main.h"
 
+/**
+ * alloc_grid - makes a 2 demensions array
+ * @width: width of the grid
+ * @height: height of the grid
+ * Return: pointer or NULL.
+ */
 int **alloc_grid(int width, int height)
 {
 	int n, y;
