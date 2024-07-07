@@ -10,7 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int size1, size2;
-	char *p, *p2;
+	char *p;
 	unsigned int n, y;
 
 	size1 = 0;
@@ -36,5 +36,6 @@ char *str_concat(char *s1, char *s2)
 			p[n] = s2[y];
 			y++;
 		}
+	}
 	return (p);
 }
