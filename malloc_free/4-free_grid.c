@@ -3,9 +3,11 @@
 
 void free_grid(int **grid, int height)
 {
-	for (grid[height]; height > 0; height--)
+	int n;
+
+	for (grid[n]; n <= height; n++)
 	{
-		free(grid[height]);
+		free(grid[n]);
 	}
 	free(grid);
 }
