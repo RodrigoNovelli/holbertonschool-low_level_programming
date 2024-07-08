@@ -28,13 +28,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (p == NULL)
 		return (NULL);
 	z = 0;
-	while (z < x + n + 1 && s1[z] != 0)
+	while (z <= x + n + 1 && s1[z] != 0)
 	{
 		p[z] = s1[z];
 		z++;
 	}
 	y = 0;
-	while (z < x + n + 1 && s2[y] != 0)
+	while (z <= x + n + 1 && s2[y] < n)
 	{
 		p[z] = s2[y];
 		z++;
