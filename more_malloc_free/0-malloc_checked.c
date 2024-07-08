@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * free_grid - frees the memory that a grid made with malloc have
- *@grid: the grid
- *@height: the height of the grid
- * Return: Always 0.
+ * malloc_checked - allocates memory with malloc
+ *@b: the amount of space you want
+ *
+ * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 
 	p = malloc(b);
 	if (p == NULL)
-		exit (98);
+		exit(98);
 	return (p);
-	exit (0);
+	exit(0);
 }
