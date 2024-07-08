@@ -31,11 +31,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (z <= x)
 			p[z] = s1[z];
-		else
-		{
-			p[z] = s2[y];
-			y++;
-		}
+		p[z] = s2[y];
+		y++;
 	}
 	return (p);
 }
