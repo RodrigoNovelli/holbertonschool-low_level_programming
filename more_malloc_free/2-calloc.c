@@ -3,17 +3,17 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strings in a malloc space of memory
- *@s1: the first string
- *@s2: the second string
- * Return: a pointer, or NULL if something goes wrong
+ * _calloc - concatenates two strings in a malloc space of memory
+ *@nmemb: the amount of spaces
+ *@size: the bytes of the spaces
+ * Return: a pointer to the space of memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
 	char *zero;
 	unsigned int counter;
-	
+
 	if (nmemb == 0)
 		return (NULL);
 	if (size == 0)
@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 	zero = p;
-	for(counter = 0; counter < (nmemb * size); counter++)
+	for (counter = 0; counter < (nmemb * size); counter++)
 	{
 		zero[counter] = 0;
 	}
