@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * free_grid - frees the memory that a grid made with malloc have
- *@grid: the grid
- *@height: the height of the grid
+ * string_nconcat - Concatenates 2 string
+ *@s1: the first string
+ *@s2: the second string
+ *@n: the bytes form s2 you wanna copy
  * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
