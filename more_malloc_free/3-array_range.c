@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strings in a malloc space of memory
- *@s1: the first string
- *@s2: the second string
- * Return: a pointer, or NULL if something goes wrong
+ * array_range - Makes an int array of numbers with malloc
+ *@min: the min int you wanna use
+ *@max: the max int you wanna reach
+ * Return: pointer to the array
  */
 int *array_range(int min, int max)
 {
