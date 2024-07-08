@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[z] = s1[z];
 		if (z >= x)
 		{
-			for(y = 0; y <= n; y++)
+			for(y = 0; y < n; y++)
 			{
 				p[z] = s2[y];
 				z++;
