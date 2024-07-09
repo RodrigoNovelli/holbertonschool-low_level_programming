@@ -44,7 +44,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *copyo;
 	int x = 0;
 	int y = 0;
-	int c;
 
 	while (name[x] != 0)
 		x++;
