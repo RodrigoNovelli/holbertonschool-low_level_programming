@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- *
- * 
+ * print_dog - Prints the structure of dog
+ * @d: a pointer to the structure
+ * Return: is a void function
  */
 void print_dog(struct dog *d)
 {
