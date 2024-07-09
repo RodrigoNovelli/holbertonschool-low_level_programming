@@ -21,20 +21,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 		x++;
 	while (owner[y] != 0)
 		y++;
-	d = malloc(sizeof(dog_t) + 1);
+	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		copyn = malloc((x + 1) * sizeof(char));
+		copyn = malloc(x * sizeof(char));
 		if (copyn == NULL)
 		{
 			free(d);
 			return (NULL);
 		}
-		copyo = malloc((y + 1) * sizeof(char));
+		copyo = malloc(y * sizeof(char));
 		if (copyo == NULL)
 		{
 			free(d);
