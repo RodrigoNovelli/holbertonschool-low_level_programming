@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	}
 	return (p);
 }
-/*
+/**
  * new_dog - Creates a new dog
  * @name: the name of th enew dog
  * @age: the age of the owner
