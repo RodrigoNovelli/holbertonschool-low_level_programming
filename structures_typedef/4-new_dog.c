@@ -2,7 +2,12 @@
 #include <stdio.h>
 #include "dog.h"
 /*
- * */
+ * new_dog - Creates a new dog
+ * @name: the name of th enew dog
+ * @age: the age of the owner
+ * @owner: the owner of the dor
+ * Return: pointer to new dog
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
@@ -12,11 +17,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int y = 0;
 	int c;
 
-	while (name != 0)
+	while (name[x] != 0)
 		x++;
-	while (owner != 0)
+	while (owner[y] != 0)
 		y++;
-	printf("x: %i\n y: %i\n", x, y);
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	{
