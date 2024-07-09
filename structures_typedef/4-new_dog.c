@@ -28,13 +28,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	else
 	{
-		copyn = malloc((x - 1) * sizeof(char));
+		copyn = malloc(x * sizeof(char));
 		if (copyn == NULL)
 		{
 			free(d);
 			return (NULL);
 		}
-		copyo = malloc((y - 1) * sizeof(char));
+		copyo = malloc(y * sizeof(char));
 		if (copyo == NULL)
 		{
 			free(d);
@@ -45,9 +45,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 			copyn[c] = name[c];
 		for (c = 0; c < y; c++)
 			copyo[c] = owner[c];
-		d->name = copyn;
+		d->name = name;
 		d->age = age;
-		d->owner = copyo;
+		d->owner = owner;
 		return (d);
 	}
 }
