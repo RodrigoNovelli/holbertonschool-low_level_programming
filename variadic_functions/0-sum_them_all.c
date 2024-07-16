@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(sumandos, n);
 	for (counter = 0; counter <= n; counter++)
 	{
-		res = res + va_list(sumandos, int);
+		res = res + va_arg(sumandos, int);
 	}
 	va_end(sumandos);
 	return (res);
