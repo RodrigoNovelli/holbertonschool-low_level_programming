@@ -14,6 +14,8 @@ int sum_them_all(const unsigned int n, ...)
 	va_list sumandos;
 	unsigned int res = 0;
 
+	if (n == 0)
+		return (0);
 	va_sart(sumandos, n);
 	for (counter = 0; counter <= n; counter++)
 	{
