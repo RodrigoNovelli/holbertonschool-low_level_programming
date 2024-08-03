@@ -13,17 +13,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int check = 0;
 
 	current = head;
-	while (current->next != 0)
-	{
-		check++;
-		current = current->next;
-	}
-	current = head;
-	if (index >= check)
-	{
-		printf("(nil)");
-		return (0);
-	}
 	for (counter = 0; counter < index; counter++)
 	{
 		current = current->next;
